@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Contact Us</Title>
+    </Head>
+
     <div class="bg-img-1 h-[400px]">
       <div>
         <div class="h-[302px] flex justify-center items-center w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto text-white pt-40 lg:mt-10">

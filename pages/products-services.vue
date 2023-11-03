@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Products and Services</Title>
+    </Head>
+
     <section class="section-1">
       <div class="bg-img-1 h-[400px]">
         <div>

@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>About Us</Title>
+    </Head>
+
     <section class="section-1">
       <div class="bg-img-1 h-[400px]">
         <div>  
@@ -185,7 +189,7 @@
           <p class="leading-7 text-gray-900 text-center w-[90%] mx-auto mb-8 font-medium">We proudly collaborate with leading industry partners to deliver unparalleled service and innovation.</p>
       
           <div>
-            <Carousel :wrap-around="true" autoplay="1500" transition="500"  v-bind="settings" :breakpoints="breakpoints">
+            <Carousel :wrap-around="true" :autoplay="1500" :transition="500"  v-bind="settings" :breakpoints="breakpoints">
               <Slide v-for="image in images" :key="image">
                 <div class="carousel__item">
                   <img :src="image.path" />

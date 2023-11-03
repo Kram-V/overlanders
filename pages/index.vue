@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Home</Title>
+    </Head>
+
     <section class="section-1">
       <div class="bg-img-1 h-[800px]">
         <div class="text-white">
