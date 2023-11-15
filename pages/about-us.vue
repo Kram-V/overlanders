@@ -24,7 +24,7 @@
         <img class="justify-self-center lg:justify-self-start" src="/about-us.png" alt="">
 
         <div>
-          <div class="flex flex-col gap-4 mb-10">
+          <div class="flex flex-col gap-4 mb-10 covered-to-animate-bottom">
             <span class="uppercase font-bold text-xl text-gray-600">About Us</span>
 
             <h3 class="text-[25px] lg:text-[33px] font-bold text-black leading-[40px] lg:leading-[50px]">Discover Our <span class="text-orange-color">Journey</span>, Your <span class="text-orange-color">Success</span></h3>
@@ -46,19 +46,19 @@
       
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-top">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-x animate-to-top">
               <img src="/who-we-are-icon.png" class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" alt="Services">
               <h2 class="text-xl lg:text-2xl font-bold text-gray-700">Who We Are</h2>
               <p class="leading-8 text-gray-500">A certified wholesaler and distributor of local and internationally manufactured goods for various accredited retail companies in the Philippines.</p>
             </div>
 
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl  animate-to-bottom">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-bottom">
               <img src="/what-we-do-icon.png" class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" alt="Services">
               <h2 class="text-xl lg:text-2xl font-bold text-gray-700">What We Do</h2>
               <p class="leading-8 text-gray-500">We help local and foreign manufacturers deliver their products in the Philippines in a seamless and timely manner that always prioritizes strategic and secure handling.</p>
             </div>
 
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl  animate-to-top">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-top">
               <img src="/what-we-prioritize-icon.png" class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" alt="Services">
               <h2 class="text-xl lg:text-2xl font-bold text-gray-700">What We Prioritize</h2>
               <p class="leading-8 text-gray-500">Our logistics solutions meet the client’s needs and go beyond expectations, ensuring absolute timely delivery of goods while doing so in as time and cost efficiently as possible.</p>
@@ -117,7 +117,7 @@
           </div>
 
           <div class="grid grid-cols-12 gap-6 2xl:gap-10 items-center">
-            <div class="flex flex-col gap-8 animate-to-bottom order-2 col-span-12 md:col-span-6 2xl:col-span-4 2xl:order-1">
+            <div class="flex flex-col gap-8 order-2 col-span-12 md:col-span-6 2xl:col-span-4 2xl:order-1 animate-to-bottom">
               <div class="flex flex-col md:flex-row gap-4 font-medium mb-3 xsm:mb-0">
                 <img class="self-start" src="/integrity-icon.png" alt="">
 
@@ -146,11 +146,11 @@
               </div>
             </div>
 
-            <div class="justify-self-center animate-to-top order-1 mb-10 col-span-12 2xl:col-span-4 2xl:mb-0 2xl:order-2">
+            <div class="justify-self-center order-1 mb-10 col-span-12 2xl:col-span-4 2xl:mb-0 2xl:order-2 animate-to-top">
               <img src="/our-values.png" />
             </div>
 
-            <div class="flex flex-col gap-8 animate-to-bottom order-3 col-span-12 md:col-span-6 2xl:col-span-4 2xl:order-3">
+            <div class="flex flex-col gap-8 order-3 col-span-12 md:col-span-6 2xl:col-span-4 2xl:order-3 animate-to-bottom">
               <div class="flex flex-col md:flex-row gap-4 font-medium mb-3 xsm:mb-0">
                 <img class="self-start" src="/professionalism-icon.png" alt="">
 
@@ -227,12 +227,8 @@
 </template>
 
 <script setup> 
-import { useRoute } from "vue-router";
-import { reactive } from 'vue';
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
-
-const route = useRoute();
 
 
 const images = reactive(
@@ -306,31 +302,30 @@ const breakpoints = reactive(
   },
 )
 
+const observeSections = () => {
+  const sections = document.querySelectorAll('section');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show-animate');
+        } else {
+          entry.target.classList.remove('show-animate');
+        }
+      });
+    },
+  );
+
+  sections.forEach((sec) => {
+    observer.observe(sec);
+  });
+};
+
+
 onMounted(() => {
-  let sections = document.querySelectorAll("section")
-
-  window.onscroll = () => {
-    sections.forEach(sec => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 500;
-      let height = sec.offsetHeight;
-
-      if (top >= offset && top < offset + height) {
-        sec.classList.add("show-animate")
-      }
-    })
-  }
-})
-
-watch(route, () => {
-  let sections = document.querySelectorAll("section")
-
-  
-  sections.forEach(sec =>  {
-    sec.classList.remove("show-animate")
-  })
-})
-
+  observeSections();
+});
 </script>
 
 <style scoped>

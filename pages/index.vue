@@ -7,8 +7,7 @@
     <section class="section-1">
       <div class="bg-img-1 h-[800px]">
         <div class="text-white">
-      
-          <div class="h-[703px] flex flex-col gap-5 text-center lg:text-left justify-center w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto pt-36 lg:pt-28 lg:mt-10">
+          <div class="h-[703px] flex flex-col gap-5 text-center lg:text-left justify-center w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto pt-36 lg:pt-28 lg:mt-10 animate-to-fade">
             <div class="w-full lg:w-[900px] flex flex-col gap-5">
               <div>
                 <h5 class="text-[24px] uppercase font-semibold relative pl-0 lg:pl-12 mb-5 hidden lg:block">
@@ -49,9 +48,9 @@
 
     <section class="section-2">
       <div class="w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-8 items-center py-20">
-        <img class="justify-self-center lg:justify-self-start animate-to-right" src="/who-we-are.png" alt="">
+        <img class="justify-self-center lg:justify-self-start" src="/who-we-are.png" alt="">
 
-        <div class="animate-to-top">
+        <div>
           <div class="flex flex-col gap-4 mb-10">
             <span class="uppercase font-bold text-xl text-gray-600">Who we are</span>
 
@@ -73,12 +72,12 @@
     <section class="section-3">
       <div class=" bg-gray-100 py-20">
         <div class="w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto">
-          <h3 class="text-[25px] lg:text-[33px] font-bold text-black text-center mb-8">What we do</h3>
-          <p class="leading-7 text-gray-900 text-center w-[90%] mx-auto mb-8 font-medium">At Overlanders, we specialize in end to end reverse logistics solutions that turn your returns into revenue. Leveraging cutting edge technology and sustainable practices, we optimize your supply chain to save time, reduce costs, and boost customer satisfaction.</p>
+          <h3 class="text-[25px] lg:text-[33px] font-bold text-black text-center mb-8 animate-to-bottom">What we do</h3>
+          <p class="leading-7 text-gray-900 text-center w-[90%] mx-auto mb-8 font-medium animate-to-bottom">At Overlanders, we specialize in end to end reverse logistics solutions that turn your returns into revenue. Leveraging cutting edge technology and sustainable practices, we optimize your supply chain to save time, reduce costs, and boost customer satisfaction.</p>
       
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-right">
               <img src="/icon-1.png" class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" alt="Services">
               <h2 class="text-xl lg:text-2xl font-bold text-gray-700">Our Services</h2>
               <p class="leading-8 text-gray-500">The company is engaged in the business of wholesale and distribution of its home brands, stock lots local and internationally manufactured goods over 100 retail stores nationwide and eCommerce channels.</p>
@@ -88,7 +87,7 @@
               </NuxtLink>
             </div>
 
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-top">
               <img src="/icon-2.png" class="h-[50px] w-[50px] md:h-[60px] md:w-[60px]" alt="Services">
               <h2 class="text-xl lg:text-2xl font-bold text-gray-700">Local & Foreign</h2>
               <p class="leading-8 text-gray-500">We help local and foreign manufacturers deliver their products in the Philippines in a seamless and timely manner that always prioritizes strategic and secure handling.</p>
@@ -104,7 +103,7 @@
 
     <section class="section-4">
       <div class="w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto py-20 grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-8">
-        <div class="self-center order-2 lg:order-1 animate-to-right">
+        <div class="self-center order-2 lg:order-1">
           <div class="flex flex-col gap-4 mb-10">
             <span class="uppercase font-bold text-xl text-gray-600 leading-[30px]">Our Vision and Values</span>
             <h3 class="text-[25px] lg:text-[33px] font-bold text-black leading-[40px] lg:leading-[50px]">Turning Returns Into Business Opportunities</h3>
@@ -136,7 +135,7 @@
         </div>
         
 
-        <div class=" justify-self-center order-1 lg:order-2 animate-to-bottom">
+        <div class=" justify-self-center order-1 lg:order-2">
           <img src="/woman-in-warehouse.png" class=" rounded" alt="">
         </div>
       </div>
@@ -145,7 +144,7 @@
     <section class="section-5">
       <div class="bg-img-2 py-20">
         <div class="w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto flex justify-center sm:justify-end">
-          <div class=" bg-gray-100 rounded-lg p-6 sm:p-10  drop-shadow-xl w-[500px] relative">
+          <div class=" bg-gray-100 rounded-lg p-6 sm:p-10  drop-shadow-xl w-[500px] relative animate-to-fade">
             <h3 class="text-xl font-bold text-gray-800 leading-10 italic mb-6"><span class="text-orange-color">Quality</span> methods and results that strive for the most <span class="text-orange-color">efficient</span> solutions to <span class="text-orange-color">grow</span> our client's business.</h3>
             <p class="leading-8 text-gray-700 text-[14px]">At <span class="font-bold">Overlanders,</span> we employ quality methods and deliver results aimed at providing the most efficient solutions to drive our client's business growth.</p>
 
@@ -207,38 +206,32 @@
   </div>
 </template>
 
-
 <script setup>
-import { useRoute } from "vue-router";
+const observeSections = () => {
+  const sections = document.querySelectorAll('section');
 
-const route = useRoute();
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show-animate');
+        } else {
+          entry.target.classList.remove('show-animate');
+        }
+      });
+    },
+  );
+
+  sections.forEach((sec) => {
+    observer.observe(sec);
+  });
+};
 
 onMounted(() => {
-  let sections = document.querySelectorAll("section")
-
-  window.onscroll = () => {
-    sections.forEach(sec => {
-      let top = window.scrollY;
-      let offset = sec.offsetTop - 500;
-      let height = sec.offsetHeight;
-
-      if (top >= offset && top < offset + height) {
-        sec.classList.add("show-animate")
-      }
-    })
-  }
-})
-
-watch(route, () => {
-  let sections = document.querySelectorAll("section")
-  
-  sections.forEach(sec =>  {
-    sec.classList.remove("show-animate")
-  })
-})
-
-
+  observeSections();
+});
 </script>
+
 
 
 <style scoped>
@@ -256,6 +249,4 @@ watch(route, () => {
     background-position: center; 
     background-repeat: no-repeat;
 }
-
-
 </style>

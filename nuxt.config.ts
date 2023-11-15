@@ -34,8 +34,9 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: [
-    { src: '~/plugins/scroll-behavior.client.ts', mode: 'client' }
+  plugins: ['~/plugins/fontawesome.client.js', 
+    "~/plugins/scroll-behavior.client.js", 
+    "~/plugins/vue3-toastify.client.js", 
   ],
 
   alias: {
