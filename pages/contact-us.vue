@@ -23,38 +23,16 @@
     </div>
 
     
-    <div class="grid grid-cols-1 pt-20 w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto">
+    <div class="grid grid-cols-1 pt-20 w-[92%] h-[400px] sm:w-[85%] 2xl:w-[1400px] mx-auto">
       <div>
-        <GMapMap
-          :center="center"
+        <GoogleMap
+          :api-key="apiKey"
+          style="width: 100%; height: 100%"
+          :center="{ lat, lng }"
           :zoom="15"
-          :options="{
-            zoomControl: true,
-            mapTypeControl: false,
-            scaleControl: false,
-            streetViewControl: false,
-            rotateControl: false,
-            fullscreenControl: true,
-          }"
-          style="width: 100%; height: 300px;"
         >
-          <GMapMarker
-            :key="index"
-            v-for="(marker, index) in markers"
-            :position="marker.position"
-            :clickable="true"
-            :draggable="true"
-            @click="openMarker(marker.id)"
-          >
-            <GMapInfoWindow
-              :closeclick="true"
-              @closeclick="openMarker(null)"
-              :opened="openedMarkerID === marker.id"
-            >
-              <div>{{ marker.description }}</div>
-            </GMapInfoWindow>
-          </GMapMarker>
-        </GMapMap>
+          <Marker :options="{ position: { lat, lng } }" />
+        </GoogleMap> 
       </div>
     </div>
  
@@ -182,19 +160,15 @@
 
 
 <script>
+
+import { GoogleMap, Marker } from "vue3-google-map";
 export default {
+  components: { GoogleMap, Marker }, 
   data() {
     return {
-      openedMarkerID: null,
-      center: { lat: 48.8773406, lng: 2.327774 },
-      markers: [
-        {
-          position: {
-            lat: 48.8773406,
-            lng: 2.327774,
-          },
-        },
-      ],
+      lat: 14.684689,
+      lng: 121.071133,
+      apiKey: import.meta.env.GOOGLE_MAPS_API_KEY,
 
       form: {
         name: "",
