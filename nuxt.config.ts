@@ -46,5 +46,5 @@ export default defineNuxtConfig({
     "@": resolve(__dirname, "/")
   },
 
-  css: ["~/assets/main.css", '@fortawesome/fontawesome-svg-core/styles.css'],
+  css: ["~/assets/main.css"],
 })
