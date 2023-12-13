@@ -20,9 +20,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.4.2",
-    "@fortawesome/free-solid-svg-icons": "^6.4.2",
-    "@fortawesome/vue-fontawesome": "^3.0.3",
     "@nuxtjs/dotenv": "^1.4.1",
     "nuxt-mail": "^4.0.1",
     "vue3-carousel": "^0.3.1",
