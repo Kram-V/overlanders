@@ -2,6 +2,11 @@
   <div>
     <Head>
       <Title>Contact Us</Title>
+      <Meta name="description" content="Get in touch with Overlanders" />
+      <Meta name="og:title" content="Contact Us" />
+      <Meta name="og:description" content="Get in touch with Overlanders" />
+      <Meta name="og:image" content="/careers.png" />
+      <Meta name="og:url" content="/" />
     </Head>
 
     <div class="bg-img-1 h-[400px]">

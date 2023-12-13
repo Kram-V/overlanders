@@ -1,9 +1,5 @@
 <template>
   <div>
-    <Head>
-      <Title>Home</Title>
-    </Head>
-
     <section class="section-1">
       <div class="bg-img-1 h-[800px]">
         <div class="text-white">
@@ -207,6 +203,16 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Home',
+  description: 'A Certified Wholesaler And Distributor Of Local And Internationally Manufactured Goods For Various Accredited Retail Companies In The Philippines.',
+  ogTitle: 'Home',
+  ogDescription: 'A Certified Wholesaler And Distributor Of Local And Internationally Manufactured Goods For Various Accredited Retail Companies In The Philippines.',
+  ogImage: '/header-homepage.png',
+  ogUrl: '[og:url]',
+
+})
+
 const observeSections = () => {
   const sections = document.querySelectorAll('section');
 
@@ -250,3 +256,5 @@ onMounted(() => {
     background-repeat: no-repeat;
 }
 </style>
+
+

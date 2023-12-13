@@ -230,6 +230,15 @@
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 
+useSeoMeta({
+  title: 'About Us',
+  description: 'At Overlanders Logistics and Distribution, Inc., we value companies who embrace progress and thrive in a culture of innovation.',
+  ogTitle: 'About Us',
+  ogDescription: 'At Overlanders Logistics and Distribution, Inc., we value companies who embrace progress and thrive in a culture of innovation.',
+  ogImage: '/mission-vision.png',
+  ogUrl: '[og:url]',
+
+})
 
 const images = reactive(
   [

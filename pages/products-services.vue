@@ -71,6 +71,16 @@
 </template>
 
 <script setup>
+useSeoMeta({
+  title: 'Products & Services',
+  description: 'Experience unmatched efficiency in every shipment. Our logistics and distribution services are tailored to propel your business forward.',
+  ogTitle: 'Products & Services',
+  ogDescription: 'Experience unmatched efficiency in every shipment. Our logistics and distribution services are tailored to propel your business forward.',
+  ogImage: '/warehouse-management-system.png',
+  ogUrl: '[og:url]',
+
+})
+
 const observeSections = () => {
   const sections = document.querySelectorAll('section');
 
