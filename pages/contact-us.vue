@@ -84,7 +84,7 @@
                 required
               />
              
-              <font-awesome-icon class="absolute left-4 text-gray-400 top-4" icon="fa-solid fa-user" />
+              <Icon name="mdi:user" class="absolute left-3 text-gray-400 top-3 text-2xl" />
               <!-- <span :class="{ 'text-red-600': error.name }">{{ error.name }}</span> -->
             </div>
 
@@ -105,7 +105,7 @@
                 pattern="09\d{9}"
               />
 
-              <font-awesome-icon class="absolute left-4 text-gray-400 top-4" icon="fa-solid fa-mobile" />
+              <Icon name="bxs:mobile" class="absolute left-3 text-gray-400 top-3.5 text-xl" />
               <!-- <span :class="{ 'text-red-600': error.mobile_no }">{{ error.mobile_no }}</span> -->
             </div>
             
@@ -124,7 +124,7 @@
                 required
               />
 
-              <font-awesome-icon class="absolute left-4 text-gray-400 top-4" icon="fa-solid fa-envelope" />
+              <Icon name="ic:round-email" class="absolute left-3 text-gray-400 top-3.5 text-xl" />
               <!-- <span :class="{ 'text-red-600': error.email_address }">{{ error.email_address }}</span> -->
             </div>
           </div>
@@ -142,7 +142,7 @@
                 required
               />
 
-              <font-awesome-icon class="absolute left-4 text-gray-400 top-4" icon="fa-solid fa-book" />
+              <Icon name="fluent:book-24-filled" class="absolute left-3 text-gray-400 top-3.5 text-xl" />
               <!-- <span :class="{ 'text-red-600': error.subject }">{{ error.subject }}</span> -->
             </div>
           </div>
@@ -164,7 +164,7 @@
                 required
               ></textarea>
 
-              <font-awesome-icon class="absolute left-4 text-gray-400 top-4" icon="fa-solid fa-paper-plane" />
+              <Icon name="fa-solid:paper-plane" class="absolute left-3 text-gray-400 top-3.5 text-lg" />
               <!-- <span :class="{ 'text-red-600': error.message }">{{ error.message }}</span> -->
             </div>
           </div>

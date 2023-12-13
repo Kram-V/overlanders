@@ -144,7 +144,7 @@
             <h3 class="text-xl font-bold text-gray-800 leading-10 italic mb-6"><span class="text-orange-color">Quality</span> methods and results that strive for the most <span class="text-orange-color">efficient</span> solutions to <span class="text-orange-color">grow</span> our client's business.</h3>
             <p class="leading-8 text-gray-700 text-[14px]">At <span class="font-bold">Overlanders,</span> we employ quality methods and deliver results aimed at providing the most efficient solutions to drive our client's business growth.</p>
 
-            <font-awesome-icon class="absolute text-[220px] sm:text-[300px] bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 -z-20 text-white" icon="fa-solid fa-quote-left" />
+            <Icon name="fa6-solid:quote-left" class="absolute text-[220px] sm:text-[300px] bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2 -z-20 text-white"/>
           </div>
         </div>
       </div>

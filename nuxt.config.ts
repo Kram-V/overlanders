@@ -7,14 +7,17 @@ export default defineNuxtConfig({
 
   modules: [
     ['nuxt-mail', {
-      smtp: {
-        service: 'gmail',
-        auth: {
-          user: process.env.NUXT_MAIL_USER,
-          pass: process.env.NUXT_MAIL_PASSWORD,
+        smtp: {
+          service: 'gmail',
+          auth: {
+            user: process.env.NUXT_MAIL_USER,
+            pass: process.env.NUXT_MAIL_PASSWORD,
+          },
         },
       },
-    }],
+    ],
+
+    'nuxt-icon'
   ],
 
   mail: {
@@ -34,7 +37,7 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: ['~/plugins/fontawesome.client.js', 
+  plugins: [ 
     "~/plugins/scroll-behavior.client.js", 
     "~/plugins/vue3-toastify.client.js", 
   ],

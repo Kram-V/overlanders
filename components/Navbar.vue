@@ -37,7 +37,7 @@
       </span>
 
       <div class="block lg:hidden">
-        <font-awesome-icon @click="handleOpenSidebar" class="text-2xl mt-1 cursor-pointer" icon="fa-solid fa-bars" />
+        <Icon @click="handleOpenSidebar" name="mingcute:menu-fill" class="text-2xl mt-1 cursor-pointer"/>
       </div>
 
       <nav class="hidden lg:block">
@@ -95,7 +95,7 @@
     <div class="flex justify-between items-center mb-4 px-2">
       <h1 class="text-lg font-medium relative -left-[5px]"><img class="" src="/overlanders-navbar-logo.png" alt=""></h1>
       
-      <font-awesome-icon @click="handleCloseSidebar" class="text-2xl mt-1 cursor-pointer text-black" icon="fa-solid fa-xmark" />
+      <Icon @click="handleCloseSidebar" name="gravity-ui:xmark" class="text-2xl mt-1 cursor-pointer"/>
     </div>
 
     <div class="text-black flex flex-col pt-14 items-center text-lg gap-6 h-[90%]">
