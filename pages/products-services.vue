@@ -22,24 +22,24 @@
     <section class="section-2">
       <div class="py-20">
         <div class="w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto">
-          <h3 class="text-[25px] lg:text-[33px] font-bold text-black text-center mb-8 animate-to-bottom">Our Logistics & Distribution Services</h3>
-          <p class="leading-7 text-gray-900 text-center w-[90%] mx-auto mb-8 font-medium animate-to-bottom">Experience unmatched efficiency in every shipment. Our logistics and distribution services are tailored to propel your business forward.</p>
+          <h3 class="text-[25px] lg:text-[33px] font-bold text-black text-center mb-8">Our Logistics & Distribution Services</h3>
+          <p class="leading-7 text-gray-900 text-center w-[90%] mx-auto mb-8 font-medium">Experience unmatched efficiency in every shipment. Our logistics and distribution services are tailored to propel your business forward.</p>
       
 
           <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-top">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl">
               <img src="/warehouse-&-storage.png" alt="Services">
               <h6 class="text-xl lg:text-xl font-bold text-gray-700">Warehouse & Storage</h6>
               <p class="leading-8 text-gray-500">Overlanders warehousing and storage is extended to a diverse range of industries. Our scalable storage costs are variable based on the capacity, seasonality, or organic growth of your business. Our storage facilities are flexible to our client’s requirements whether this be palletized, bulk storage, or stillage.</p>
             </div>
 
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-bottom">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl">
               <img src="/warehouse-management-system.png" alt="Services">
               <h6 class="text-xl lg:text-xl font-bold text-gray-700">Warehouse Management System</h6>
               <p class="leading-8 text-gray-500">Overlanders can provide visibility into an organization’s inventory at any time and location, whether in a facility or in transit. Our process, allow organizations to control and administer warehouse operations from the time goods or materials enter a warehouse until they move out.</p>
             </div>
 
-            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl animate-to-top">
+            <div class=" bg-white rounded-lg p-5 flex flex-col gap-4 drop-shadow-xl">
               <img src="/wholesale-distribution.png" alt="Services">
               <h6 class="text-xl lg:text-xl font-bold text-gray-700">Wholesale Distribution & End-to-End Logistics</h6>
               <p class="leading-8 text-gray-500">Overlanders conveniently and efficiently delivers and distributes your products, brands, stocks, and services to the growing Philippine retail market. ‘Just-in-time’ delivery policy is practiced where logistics and inventory management is handled, allowing you to focus on your core business.</p>

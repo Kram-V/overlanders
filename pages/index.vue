@@ -6,17 +6,17 @@
           <div class="h-[703px] flex flex-col gap-5 text-center lg:text-left justify-center w-[92%] sm:w-[85%] 2xl:w-[1400px] mx-auto pt-36 lg:pt-28 lg:mt-10 animate-to-fade">
             <div class="w-full lg:w-[900px] flex flex-col gap-5">
               <div>
-                <h5 class="text-[24px] uppercase font-semibold relative pl-0 lg:pl-12 mb-5 hidden lg:block">
+                <h5 class="text-[24px] uppercase font-semibold relative pl-0 lg:pl-12 mb-5">
                   <span class="ml-4 absolute left-0 h-full border-l-4 border-orange-color rotate-90 hidden lg:block"></span>
                   Revolutionizing Returns
                 </h5>
 
-                <h5 class="text-[24px] uppercase font-semibold relative pl-0 lg:pl-12 mb-8 block lg:hidden">
+                <!-- <h5 class="text-[24px] uppercase font-semibold relative pl-0 lg:pl-12 mb-8 block lg:hidden">
                   Revolutionizing Returns
                   <span
                     class="absolute bottom-0 top-[85px] xsm:top-[45px] md:top-[50px] xl:top-[65px] left-1/2 transform -translate-x-1/2 w-10 border-b-4 border-orange-color"
                   ></span>
-                </h5>
+                </h5> -->
 
                 <h1 class="text-[44px] sm:text-[50px] lg:text-6xl leading-[55px] sm:leading-[65px] lg:leading-[80px] font-extrabold tracking-wide">Your <span class="text-orange-color">Trusted Partner</span> in Reverse Logistics</h1>
               </div>
